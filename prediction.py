@@ -16,7 +16,7 @@ import builtins
 builtins.hub = hub
 builtins.tf = tf
 
-# --- Load model ---
+# Load model
 @st.cache_resource
 def load_lstm_model():
     model_path = "model_lstm_2_sw.keras"
@@ -25,7 +25,7 @@ def load_lstm_model():
         st.stop()
     return load_model(model_path, custom_objects={'KerasLayer': hub.KerasLayer})
 
-# --- Predict sentiment ---
+# Predict sentiment
 @st.cache_data
 def predict_sentiment(text):
     model = load_lstm_model()
@@ -35,7 +35,7 @@ def predict_sentiment(text):
     label_map = ['Negative', 'Neutral', 'Positive']
     return label_map[predicted_class], prediction[0][predicted_class]
 
-# --- Streamlit UI ---
+#Streamlit UI 
 def run():
     st.title("📚 Kindle Review Sentiment Classification")
 
