@@ -21,7 +21,7 @@ builtins.tf = tf
 # Load the model safely
 @st.cache_resource
 def load_lstm_model():
-    model_path = "/Users/nugrahani/p2-ftds029-hck-g7-aulianugrahani/Deployment/model_lstm_2_sw.keras"
+    model_path = "model_lstm_2_sw.keras"
     if not os.path.exists(model_path):
         st.error(f"Model file not found at {model_path}. Please ensure the file exists.")
         st.stop()
