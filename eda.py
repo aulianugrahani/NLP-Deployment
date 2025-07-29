@@ -24,7 +24,7 @@ def run():
     """)
 
     # LOAD DATA
-    data = pd.read_csv('Deployment/preprocessed_kindle_review .csv')
+    data = pd.read_csv('preprocessed_kindle_review .csv')
 
     
     
