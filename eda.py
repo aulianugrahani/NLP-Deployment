@@ -24,7 +24,7 @@ def run():
     """)
 
     # LOAD DATA
-    data = pd.read_csv('/Users/nugrahani/p2-ftds029-hck-g7-aulianugrahani/Deployment/preprocessed_kindle_review .csv')
+    data = pd.read_csv('Deployment/preprocessed_kindle_review .csv')
 
     
     
