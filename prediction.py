@@ -19,7 +19,7 @@ def preprocess(text):
 # Load the trained model
 @st.cache_resource
 def load_model():
-    return tf.keras.models.load_model('models/model_lstm_2_sw.keras', compile=True)
+    return tf.keras.models.load_model('model_lstm_2_sw.keras', compile=True)
 
 model = load_model()
 
