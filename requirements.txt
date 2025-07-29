@@ -1,14 +1,26 @@
+# Core
 streamlit==1.35.0
-pandas==2.0.3
 numpy==1.24.4
+pandas==2.0.3
+
+# Visualization
 matplotlib==3.7.3
 seaborn==0.12.2
 wordcloud==1.9.3
-tensorflow==2.15.0
-keras==3.0.5
-tensorflow-hub==0.15.0
+
+# NLP Tools
 nltk==3.8.1
 spacy==3.7.2
 textblob==0.17.1
-tqdm==4.66.1
-scikit-learn==1.3.0
+
+# TensorFlow + TF Hub
+tensorflow==2.15.0
+tensorflow-hub==0.15.0
+
+# Model Persistence Compatibility
+keras==3.0.5
+
+# Required NLTK Data (run this in script or notebook)
+# nltk.download('punkt')
+# nltk.download('stopwords')
+# spacy.load('en_core_web_sm')  # Ensure this is downloaded in the environment
