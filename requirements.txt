@@ -16,11 +16,10 @@ textblob==0.17.1
 # TensorFlow + TF Hub
 tensorflow==2.15.0
 tensorflow-hub==0.15.0
-
-# Model Persistence Compatibility
 keras==3.0.5
 
-# Required NLTK Data (run this in script or notebook)
-# nltk.download('punkt')
-# nltk.download('stopwords')
-# spacy.load('en_core_web_sm')  # Ensure this is downloaded in the environment
+# Ensure compatibility with rich dependencies
+pygments==2.19.2
+mdurl==0.1.2
+markdown-it-py==3.0.0
+rich==14.1.0
