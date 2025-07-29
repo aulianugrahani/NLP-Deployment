@@ -6,6 +6,7 @@ seaborn==0.12.2
 wordcloud==1.9.3
 tensorflow==2.14.0
 tensorflow-hub==0.15.0
+keras==3.0.5 
 nltk==3.8.1
 spacy==3.7.2
 textblob==0.17.1
